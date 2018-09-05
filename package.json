@@ -1,0 +1,30 @@
+{
+  "name": "cordova.plugin.info",
+  "version": "0.1.0",
+  "description": "InfoDevice Plugin",
+  "cordova": {
+    "id": "cordova.plugin.info",
+    "platforms": [
+      "android",
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnvtphu/cordova-plugin-device.git"
+  },
+  "keywords": [
+    "android",
+    "windows",
+    "info",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-windows"
+  ],
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/lnvtphu/cordova-plugin-device/issues"
+  },
+  "homepage": "https://github.com/lnvtphu/cordova-plugin-device#readme"
+}
