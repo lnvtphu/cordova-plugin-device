@@ -1,5 +1,21 @@
-var exec = require('cordova/exec');
+var exec = cordova.require('cordova/exec');
 
-exports.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'DeviceInfoA', 'coolMethod', [arg0]);
+var DeviceInfoA = function() {
+    console.log('InfoDevice instanced');
 };
+
+DeviceInfoA.prototype.coolMethod = function(arg0, onSuccess, onError) {
+    var errorCallback = function(obj) {
+        onError(obj);
+    };
+
+    var successCallback = function(obj) {
+        onSuccess(obj);
+    };
+
+    exec(successCallback, errorCallback, 'DeviceInfoA', 'getInfo', [arg0]);
+};
+
+if (typeof module != 'undefined' && module.exports) {
+    module.exports = DeviceInfoA;
+}
