@@ -4,7 +4,7 @@ var DeviceInfo = function() {
     console.log('DeviceInfo instanced');
 };
 
-DeviceInfo.prototype.coolMethod = function(onSuccess, onError) {
+DeviceInfo.prototype.coolMethod = function(arg, onSuccess, onError) {
     var errorCallback = function(obj) {
         onError(obj);
     };
@@ -13,6 +13,6 @@ DeviceInfo.prototype.coolMethod = function(onSuccess, onError) {
         onSuccess(obj);
     };
 
-    exec(successCallback, errorCallback, 'DeviceInfo', 'coolMethod', []);
+    exec(successCallback, errorCallback, 'DeviceInfo', 'coolMethod', [arg]);
 };
 module.exports = DeviceInfo;
