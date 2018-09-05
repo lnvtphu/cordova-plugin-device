@@ -1,18 +1,5 @@
 var exec = require('cordova/exec');
 
-var DeviceInfo = function() {
-    console.log('DeviceInfo instanced');
+exports.coolMethod = function (arg0, success, error) {
+    exec(success, error, 'DeviceInfo', 'coolMethod', [arg0]);
 };
-
-DeviceInfo.prototype.coolMethod = function(arg, onSuccess, onError) {
-    var errorCallback = function(obj) {
-        onError(obj);
-    };
-
-    var successCallback = function(obj) {
-        onSuccess(obj);
-    };
-
-    exec(successCallback, errorCallback, 'DeviceInfo', 'coolMethod', [arg]);
-};
-module.exports = DeviceInfo;
