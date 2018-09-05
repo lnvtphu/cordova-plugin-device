@@ -8,13 +8,13 @@
 
   <js-module name="DeviceInfo" src="www/DeviceInfo.js">
     <!-- must rename the target name -->
-    <clobbers target="DeviceInfoA" />
+    <clobbers target="DeviceInfo" />
     <!-- <merges target="chrome.socket" /> -->
   </js-module>
 
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
-      <feature name="DeviceInfoX">
+      <feature name="DeviceInfoAndroid">
         <param name="android-package" value="cordova.plugin.info.DeviceInfo" />
       </feature>
     </config-file>
@@ -23,7 +23,7 @@
   </platform>
 
   <platform name="windows">
-    <js-module name="DeviceInfoX" src="src/windows/DeviceInfo.js">
+    <js-module name="DeviceInfoWindow" src="src/windows/DeviceInfo.js">
       <runs target="" />
     </js-module>
   </platform>
