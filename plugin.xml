@@ -6,7 +6,7 @@
   <license>Apache 2.0</license>
   <keywords>android, windows, info</keywords>
 
-  <js-module name="DeviceInfoA" src="www/DeviceInfo.js">
+  <js-module name="DeviceInfo" src="www/DeviceInfo.js">
     <!-- must rename the target name -->
     <clobbers target="DeviceInfoA" />
     <!-- <merges target="chrome.socket" /> -->
@@ -14,7 +14,7 @@
 
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
-      <feature name="DeviceInfo">
+      <feature name="DeviceInfoA">
         <param name="android-package" value="cordova.plugin.info.DeviceInfo" />
       </feature>
     </config-file>
