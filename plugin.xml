@@ -6,7 +6,7 @@
   <license>Apache 2.0</license>
   <keywords>android, windows, info</keywords>
 
-  <js-module name="DeviceInfo" src="www/DeviceInfo.js">
+  <js-module name="DeviceInfoA" src="www/DeviceInfo.js">
     <!-- must rename the target name -->
     <clobbers target="DeviceInfoA" />
     <!-- <merges target="chrome.socket" /> -->
