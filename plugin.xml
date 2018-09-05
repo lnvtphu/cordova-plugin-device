@@ -8,7 +8,7 @@
 
   <js-module name="DeviceInfo" src="www/DeviceInfo.js">
     <!-- must rename the target name -->
-    <clobbers target="DeviceInfoA" />
+    <clobbers target="DeviceInfo" />
     <!-- <merges target="chrome.socket" /> -->
   </js-module>
 
