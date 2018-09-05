@@ -14,7 +14,7 @@
 
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
-      <feature name="DeviceInfo">
+      <feature name="DeviceInfoX">
         <param name="android-package" value="cordova.plugin.info.DeviceInfo" />
       </feature>
     </config-file>
@@ -23,7 +23,7 @@
   </platform>
 
   <platform name="windows">
-    <js-module name="DeviceInfoA" src="src/windows/DeviceInfo.js">
+    <js-module name="DeviceInfoX" src="src/windows/DeviceInfo.js">
       <runs target="" />
     </js-module>
   </platform>
