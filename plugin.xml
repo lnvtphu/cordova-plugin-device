@@ -23,7 +23,7 @@
   </platform>
 
   <platform name="windows">
-    <js-module name="DeviceInfo" src="src/windows/DeviceInfo.js">
+    <js-module name="DeviceInfoA" src="src/windows/DeviceInfo.js">
       <runs target="" />
     </js-module>
   </platform>
